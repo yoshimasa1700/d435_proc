@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <arg name="rosbag_path"/>
+
+  <node pkg="d435_proc"
+        type="rosbag_play.py"
+        name="d435_rosbag_play"
+        args="--path $(arg rosbag_path)"/>
+</launch>

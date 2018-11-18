@@ -16,7 +16,7 @@ def parseArguments():
     parser.add_argument('--path', help='path for d435 rosbag', required=True)
     parser.add_argument('--dump', default=False, action='store_true',
                         help='dump image while play rosbag.')
-    args = parser.parse_args()
+    args, _ = parser.parse_known_args()
     return args
 
 
